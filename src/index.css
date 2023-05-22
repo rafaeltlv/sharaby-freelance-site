@@ -1,13 +1,321 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* Define colors as variables */
+:root {
+  --grey: #343B4B;
+  --white: #FFFFFF;
+  --orange: #F29100;
+  --blue: #007bff;
+  --black: #000000;
+  --primary-color: var(--blue);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--grey);
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the overlay */
+#cookieOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* Styles for the cookie consent banner */
+#cookieBanner {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#cookieBanner p {
+  margin: 0 0 10px;
+  color: #000000;
+}
+
+#cookieBanner button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey);
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--blue);
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+  background-color: lightslategray;
+  border-color: lightslategray;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Services */
+.services {
+  padding: 2rem 0;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.services h2 {
+  margin-bottom: 3rem;
+  color: var(--grey);
+  text-align: center;
+}
+
+.services .card {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services .card-img-top {
+  width: 100%;
+  height: 150px;
+  flex-direction: column;
+  justify-content: space-between;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.services .card-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.services .card-text {
+  font-size: 16px;
+  color: var(--black);
+  flex: 1;
+}
+
+.services .btn-primary {
+  background-color: var(--grey);
+  border-color: var(--grey);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 20px;
+}
+
+.services .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us {
+  background-color: var(--grey);
+  font-size: .5rem;
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--white);
+}
+
+/* Contact Us */
+.contact-us {
+  padding: 2rem 0;
+  background-color: var(--white);
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-us h3,
+.contact-us h2,
+.contact-us h4 {
+  color: var(--grey);
+  text-align: center;
+}
+
+.contact-us p {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="message"] {
+  color: var(--grey);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+textarea.form-control {
+  padding-top: 10px; /* Adjust the padding-top value as needed */
+}
+
+.contact-us .form-control {
+  height: 50px;
+  font-size: 1;
+  color: var(--grey);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-us .form-control:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+.contact-us .btn-primary {
+  background-color: lightslategray;
+  border-color: lightslategray;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us .btn-primary:hover {
+  background-color: var(--grey);
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.follow-us h3 {
+  margin-bottom: 10px;
+  color: var(--white);
+  text-align: center;
+}
+
+.follow-us ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.follow-us li {
+  margin: 0 10px;
+}
+
+.follow-us a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.follow-us a:hover {
+  background-color: #ccc;
+}
+
+.follow-us a i {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-information h3,
+.contact-information p {
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.footer {
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.contact-information h5{
+  font-weight: bold;
+  color: var(--white);
 }
