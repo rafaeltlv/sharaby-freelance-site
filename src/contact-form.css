@@ -1,0 +1,27 @@
+
+label[for="name"],
+label[for="email"],
+label[for="message"] {
+  color: var(--grey);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+textarea.form-control {
+  padding-top: 10px; /* Adjust the padding-top value as needed */
+}
+
+.contact-us .form-control {
+  height: 50px;
+  font-size: 1;
+  color: var(--grey);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-us .form-control:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}

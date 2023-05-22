@@ -1,0 +1,7 @@
+.about-us {
+    background-color: var(--grey);
+    font-size: .5rem;
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--white);
+  }

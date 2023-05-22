@@ -1,0 +1,44 @@
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .follow-us h3 {
+    margin-bottom: 10px;
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .follow-us ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .follow-us li {
+    margin: 0 10px;
+  }
+  
+  .follow-us a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .follow-us a:hover {
+    background-color: #ccc;
+  }
+  
+  .follow-us a i {
+    font-size: 20px;
+    color: var(--white);
+  }

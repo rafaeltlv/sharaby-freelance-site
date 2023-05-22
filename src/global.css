@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* Define colors as variables */
+:root {
+    --grey: #343B4B;
+    --white: #FFFFFF;
+    --orange: #F29100;
+    --blue: #007bff;
+    --black: #000000;
+    --primary-color: var(--blue);
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--grey);
+    margin: 0;
+    padding: 0;
+  }
+  

@@ -1,9 +1,9 @@
 <?php
 // Database credentials
-$servername = "your_servername";
-$username = "your_username";
-$password = "your_password";
-$dbname = "your_database_name";
+$servername = "localhost"; // Replace with your servername
+$username = "your_username"; // Replace with your username
+$password = "your_password"; // Replace with your password
+$dbname = "your_database_name"; // Replace with your database name
 
 // Create a new PDO or MySQLi connection
 try {

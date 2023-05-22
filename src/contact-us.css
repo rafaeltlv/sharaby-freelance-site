@@ -1,0 +1,37 @@
+/* Contact Us */
+.contact-us {
+  padding: 2rem 0;
+  background-color: var(--white);
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-us h3,
+.contact-us h2,
+.contact-us h4 {
+  color: var(--grey);
+  text-align: center;
+}
+
+.contact-us p {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.contact-us .btn-primary {
+  background-color: lightslategray;
+  border-color: lightslategray;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us .btn-primary:hover {
+  background-color: var(--grey);
+}
