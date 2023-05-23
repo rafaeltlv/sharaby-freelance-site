@@ -1,5 +1,5 @@
 import React from 'react';
-import '../about-us.css'; // Update the file path if needed
+import '../components_css/about-us.css'; // Update the file path if needed
 
 const AboutUs = () => {
   return (

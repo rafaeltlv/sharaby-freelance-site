@@ -1,9 +1,9 @@
 import React from 'react';
-import '../contact-form.css'; // Update the file path if needed
+import '../components_css/contact-form.css'; // Update the file path if needed
 
 const ContactForm = ({ handleSubmit }) => {
   return (
-    <div className="ContactForm" id="ContactForm">
+    <div className="contact-form" id="contact-form">
       <form id="myForm" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>

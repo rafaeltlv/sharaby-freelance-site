@@ -32,6 +32,10 @@
   transition: background-color 0.3s ease;
 }
 
+.contact-us .col-md-6 {
+  text-align: center;
+  
+}
 .contact-us .btn-primary:hover {
   background-color: var(--grey);
 }

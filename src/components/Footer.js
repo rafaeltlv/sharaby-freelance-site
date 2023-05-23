@@ -1,5 +1,5 @@
 import React from 'react';
-import '../footer.css'; // Update the file path if needed
+import '../components_css/footer.css'; // Update the file path if needed
 
 const Footer = () => {
   return (

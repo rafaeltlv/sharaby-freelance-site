@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import '../follow-us.css'; // Update the file path if needed
+import '../components_css/follow-us.css'; // Update the file path if needed
 
 const FollowUs = () => {
   return (

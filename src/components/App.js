@@ -11,6 +11,7 @@ import ContactInformation from './ContactInformation';
 import Footer from './Footer';
 import CookieBanner from './CookieBanner';
 import CookieUtils from '../CookieUtils'; // Import the CookieUtils object
+import '../components_css/global.css';
 
 const App = () => {
   useEffect(() => {

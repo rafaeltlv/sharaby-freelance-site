@@ -1,5 +1,5 @@
 import React from 'react';
-import '../contact-information.css'; // Update the file path if needed
+import '../components_css/contact-information.css'; // Update the file path if needed
 
 const ContactInformation = () => {
   return (
